@@ -12,8 +12,17 @@
     justify-content: space-between;
     height: 60px;
     .navbar-logo-link {
-      display: flex;
+      display: none;
+      align-items: center;
+      color: white;
+      font-family: 'Lobster Two', cursive;
+      font-size: 26px;
       height: 100%;
+      padding: 10px;
+      cursor: pointer;
+      @media(max-width: 767px) {
+        display: flex;
+      }
     }
     .navbar-links {
       display: flex;
@@ -95,6 +104,15 @@
       max-height: 100px;
       .keenan {
         max-width: 530px;
+      }
+    }
+    @media(max-width: 600px) {
+      font-size: 90px;
+      .row-one {
+        max-height: 40px;
+      }
+      .keenan {
+        max-width: 210px;
       }
     }
   }

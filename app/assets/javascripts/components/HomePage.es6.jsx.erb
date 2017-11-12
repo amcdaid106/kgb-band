@@ -1,19 +1,20 @@
 class HomePage extends React.Component {
   componentDidMount() {
     $("#about-section").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#about-section").offset().top
-        }, 1000);
+      console.log('clicked');
+      $('html, body').animate({
+        scrollTop: $("#about-section").offset().top
+      }, 1000);
     });
   }
 
-  getLogoImage() {
-    return `<%= asset_path('placeholder_navbar_logo.jpg') %>`
-  }
+  // getLogoImage() {
+  //   return `<%= asset_path('placeholder_navbar_logo.jpg') %>`
+  // }
 
-  getLargeLogoImage() {
-    return `<%= asset_path('placeholder_background_logo.png') %>`
-  }
+  // getLargeLogoImage() {
+  //   return `<%= asset_path('placeholder_background_logo.png') %>`
+  // }
 
   openSidebar() {
     $('.nav-sidebar').animate({right: '0px'}, 500);
@@ -33,9 +34,7 @@ class HomePage extends React.Component {
     return(
       <div className="home-page-container">
         <div className="navbar-container">
-        <div className="navbar-logo-link">
-          <img src={this.getLogoImage} alt="KGB"/>
-        </div>
+          <div className="navbar-logo-link">KGB</div>
           <div className="navbar-links">
             <a href="#">HOME</a>
             <a href="#about-section">ABOUT</a>
