@@ -1,0 +1,97 @@
+class HomePage extends React.Component {
+  componentDidMount() {
+    $("#about-section").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#about-section").offset().top
+        }, 1000);
+    });
+  }
+
+  getLogoImage() {
+    return `<%= asset_path('placeholder_navbar_logo.jpg') %>`
+  }
+
+  getLargeLogoImage() {
+    return `<%= asset_path('placeholder_background_logo.png') %>`
+  }
+
+  openSidebar() {
+    $('.nav-sidebar').animate({right: '0px'}, 500);
+    $('.close-sidebar').css({'display': 'flex'});
+    $('.navbar-menu-icon').css({'display': 'none'});
+
+  }
+
+  closeSidebar() {
+    $('.nav-sidebar').animate({right: '-300px'}, 500, () => {
+      $('.navbar-menu-icon').css({'display': 'block'});
+    });
+    $('.close-sidebar').css({'display': 'none'});
+  }
+
+  render() {
+    return(
+      <div className="home-page-container">
+        <div className="navbar-container">
+        <div className="navbar-logo-link">
+          <img src={this.getLogoImage} alt="KGB"/>
+        </div>
+          <div className="navbar-links">
+            <a href="#">HOME</a>
+            <a href="#about-section">ABOUT</a>
+            <a href="#">TOUR</a>
+            <a href="#">MEDIA</a>
+            <a href="#">CONTACT</a>
+          </div>
+          <div
+            className="navbar-menu-icon"
+            onClick={this.openSidebar}
+          >
+            <i className="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div
+          ref={(el) => this.$sidebarEl = $(el)}
+          className="nav-sidebar"
+        >
+          <div
+            className="close-sidebar"
+            onClick={this.closeSidebar}
+          >
+            <i className="fa fa-times" aria-hidden="true"></i>
+          </div>
+          <div className="links">
+            <a className="sidebar-link" href="#">
+              <div className="link-inner-container">
+                ABOUT
+              </div>
+            </a>
+            <a className="sidebar-link" href="#">
+              <div className="link-inner-container">
+                TOUR
+              </div>
+            </a>
+            <a className="sidebar-link" href="#">
+              <div className="link-inner-container">
+                MEDIA
+              </div>
+            </a>
+            <a className="sidebar-link" href="#">
+              <div className="link-inner-container">
+                CONTACT
+              </div>
+            </a>
+          </div>
+        </div>
+        <div className="large-logo">
+          <div className="row-one">
+            <div className="keenan">Keenan</div>
+            <div>Gavin</div>
+          </div>
+          <div>Byrne</div>
+        </div>
+      </div>
+    )
+  }
+}
+
