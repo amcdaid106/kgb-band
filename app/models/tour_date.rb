@@ -1,0 +1,2 @@
+class TourDate < ApplicationRecord
+end

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2017-11-14
+  time: 2017-11-14 23:21:18
+  venue: MyString
+  venue_url: MyString
+  address: MyString
+  address_url: MyString
+  tickets_url: MyString
+  photo: MyString
+  more_info: MyText
+
+two:
+  date: 2017-11-14
+  time: 2017-11-14 23:21:18
+  venue: MyString
+  venue_url: MyString
+  address: MyString
+  address_url: MyString
+  tickets_url: MyString
+  photo: MyString
+  more_info: MyText
