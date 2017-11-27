@@ -2,9 +2,9 @@ class TourDates extends React.Component {
   render() {
     return (
       <div>
-        {this.props.dates.map((date) => {
+        {this.props.dates.map((date, index) => {
           return (
-            <div>{date.venue}</div>
+            <div key={index}>{date.venue}</div>
           )
         })}
       </div>
