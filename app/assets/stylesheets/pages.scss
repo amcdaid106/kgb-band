@@ -1,12 +1,18 @@
 .home-page-container {
   // background: image-url('home/img_background_tall.png') no-repeat fixed;
-  background: image-url('placeholder_home_background.jpg');
+  background: image-url('kgb_group_v3.png');
+  // background: image-url('placeholder_home_background.jpg');
+  // background: white;
   background-size: cover;
   font-family: 'Josefin Sans', sans-serif;
   // min-height: 650px;
   // height: 100%;
   min-height: 100vh;
   position: relative;
+
+  background-position: center top;
+  height: 100%;
+  // min-height: 550px;
   .navbar-container {
     display: flex;
     align-items: center;
@@ -15,7 +21,9 @@
     .navbar-logo-link {
       display: none;
       align-items: center;
-      color: white;
+      // color: white;
+      // color: #BABABB;
+      color: black;
       font-family: 'Lobster Two', cursive;
       font-size: 26px;
       height: 100%;
@@ -33,7 +41,8 @@
       padding-top: 8px;
       width: 100%;
       a {
-        color: white;
+        // color: white;
+        color: black;
         padding: 0 20px;
         text-decoration: none;
         &:hover {
@@ -45,7 +54,8 @@
       }
     }
     .navbar-menu-icon {
-      color: white;
+      // color: white;
+      color: black;
       cursor: pointer;
       display: none;
       font-size: 20px;
@@ -83,7 +93,8 @@
     }
     .close-sidebar {
       align-items: center;
-      color: white;
+      // color: white;
+      color: black;
       cursor: pointer;
       display: none;
       font-size: 30px;
@@ -95,6 +106,8 @@
     }
   }
   .large-logo {
+    text-shadow: 10px 10px 8px black;
+
     color: white;
     font-size: 200px;
     font-family: 'Lobster Two', cursive;
@@ -105,21 +118,47 @@
     position: absolute;
     width: 100%;
     top: 20vh;
-    .row-one {
-      display: flex;
-      justify-content: center;
-      max-height: 100px;
+    .logo-names {
+      position: relative;
+      left: 25%;
       .keenan {
-        max-width: 530px;
+        position: absolute;
+        top: -110px;
+        // max-width: 530px;
+        // max-width: 210px;
       }
+      .gavin {
+        position: absolute;
+        top: 0px;
+        left: 90px;
+      }
+      .byrne {
+        position: absolute;
+        top: 110px;
+        left: 180px;
+      }
+
     }
+
     @media(max-width: 600px) {
       font-size: 90px;
       .row-one {
         max-height: 40px;
       }
       .keenan {
-        max-width: 210px;
+        position: absolute;
+        top: -110px;
+        // max-width: 210px;
+      }
+      .gavin {
+        position: absolute;
+        top: 0px;
+        left: 90px;
+      }
+      .byrne {
+        position: absolute;
+        top: 110px;
+        left: 180px;
       }
     }
   }
