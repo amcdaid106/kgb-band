@@ -23,26 +23,16 @@
 
 require 'date'
 
-
-
-TourDate.create(
-  date_time: DateTime.new(2017,12,13,20,0,0),
-  venue: "House of Blues: Boston",
-  venue_url: "http://www.houseofblues.com/boston",
-  address: "15 Lansdowne St, Boston, MA 02215, USA",
-  address_url: "https://goo.gl/maps/Wcj71AxYdL22",
-  tickets_url: "https://www.ticketmaster.com/first-aid-kit-house-of-blues-boston-boston-ma/venueartist/9044/1409163",
-  photo: "hob_boston.jpg",
-  more_info: ""
-)
+TourDate.delete_all
 
 TourDate.create(
-  date_time: DateTime.new(2018,1,10,19,30,0),
-  venue: "Olympia",
-  venue_url: "https://en.olympiahall.com/event-calandar/",
-  address: "15 Lansdowne St, Boston, MA 02215, USA",
-  address_url: "https://goo.gl/maps/Wcj71AxYdL22",
-  tickets_url: "https://www.ticketmaster.fr/en/salle/l-olympia/idsite/34",
-  photo: "hob_boston.jpg",
+  date_time: DateTime.new(2018,1,21,19,30,0),
+  city: "Glasgow"
+  venue: "City Halls - Celtic Connections Music Festival",
+  venue_url: "http://www.glasgowconcerthalls.com/city-halls/Pages/default.aspx",
+  address: "Candleriggs, Glasgow, G1 1NQ",
+  address_url: "https://goo.gl/maps/MrcXAxDTTUk",
+  tickets_url: "http://www.celticconnections.com/events/Pages/event.aspx?ev=e6cdf374-9fa7-4fe0-9993-a81400ccc8a0",
+  photo: "kgb_group_with_logo.jpg",
   more_info: ""
 )

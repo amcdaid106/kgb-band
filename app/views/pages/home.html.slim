@@ -1,32 +1,51 @@
 = react_component('PageHeading')
 
 #about-section
-  h1.about-heading Three of Ireland's top traditional musicians to form new group
-  p In a move that is sure to energise the Irish traditional music scene three of Ireland's finest instrumentalists have announced that they are to come together to form a new group. Paddy Keenan, Frankie Gavin and Dermot Byrne are to merge their considerable musical talents for a series of performances at home and abroad beginning in January 2018. The new group is to be called KGB.
+  .inner-section
+    h1.about-heading Three of Ireland's top traditional musicians to form new group
+    p In a move that is sure to energise the Irish traditional music scene three of Ireland's finest instrumentalists have announced that they are to come together to form a new group. Paddy Keenan, Frankie Gavin and Dermot Byrne are to merge their considerable musical talents for a series of performances at home and abroad beginning in January 2018. The new group is to be called KGB.
 
-  p The trio are synonymous with Irish music both in their own individual right and as members of some of this country's most famous traditional bands and groups, dating from the early 1970s to the present day. All are mutiple award winners who have made outstanding contributions to traditional music.
+    p The trio are synonymous with Irish music both in their own individual right and as members of some of this country's most famous traditional bands and groups, dating from the early 1970s to the present day. All are mutiple award winners who have made outstanding contributions to traditional music.
 
-  div.musician-section.paddy-section
-    p.musician-text
-      span.musician-name Paddy Keenan
-      |  is one of Ireland`s finest pipers, best known as a founding member of the Bothy Band, one of Irish music's most influential bands of the 1970s, with whom he played in venues all over the world. Paddy’s contributions to traditional Irish music were marked in 2002, when he received the TG4 Gradam Ceoil Musician of the Year award, which is presented to musical heroes of the modern age, and in 2011 by the Irish Music Association, with a Lifetime Achievement Award.
-    = image_tag('paddy_profile', class: "musician-image paddy-image");
+    div.musician-section.paddy-section
+      p.musician-text
+        span.musician-name Paddy Keenan
+        |  is one of Ireland`s finest pipers, best known as a founding member of the Bothy Band, one of Irish music's most influential bands of the 1970s, with whom he played in venues all over the world. Paddy’s contributions to traditional Irish music were marked in 2002, when he received the TG4 Gradam Ceoil Musician of the Year award, which is presented to musical heroes of the modern age, and in 2011 by the Irish Music Association, with a Lifetime Achievement Award.
+      = image_tag('paddy_profile', class: "musician-image paddy-image");
 
-  div.musician-section.frankie-section
-    p.musician-text
-      span.musician-name Frankie Gavin
-      |  is one of Ireland`s greatest ever fiddle players. His name is synonymous with the group De Dannan who were also formed in the 1970s, and are credited with breaking new ground in Irish traditional music through innovative choices of material and arrangements and a unique style of playing. Frankie has recorded and played with every genre of music from the Rolling Stones to Stephane Grappelli. He has the distinction of playing for four US presidents. Frankie is also an excellent tin whistle and flute player. 
-    = image_tag('frankie_profile', class: "musician-image frankie-image");
+    div.musician-section.frankie-section
+      p.musician-text
+        span.musician-name Frankie Gavin
+        |  is one of Ireland`s greatest ever fiddle players. His name is synonymous with the group De Dannan who were also formed in the 1970s, and are credited with breaking new ground in Irish traditional music through innovative choices of material and arrangements and a unique style of playing. Frankie has recorded and played with every genre of music from the Rolling Stones to Stephane Grappelli. He has the distinction of playing for four US presidents. Frankie is also an excellent tin whistle and flute player. 
+      = image_tag('frankie_profile', class: "musician-image frankie-image");
 
-  div.musician-section.dermot-section
-    p.musician-text
-      span.musician-name Dermot Byrne
-      |  is one of Ireland’s most outstanding traditional accordion players. For many years a member of Altan, Dermot performed, recorded and toured extensively with the group along with artists like Donal Lunny, Steve Cooney and Stephane Grapelli, bringing the beauty and joy of traditional Irish music to audiences all over the world. In other collaborations he has performed previously with Frankie Gavin, Sharon Shannon, and The Stunning along with many other outstanding Irish and international musicians. For his contribution to Irish music Dermot was chosen as TG4's Traditional Musician of the Year 2013.
-    = image_tag('dermot_profile', class: "musician-image dermot-image");
+    div.musician-section.dermot-section
+      p.musician-text
+        span.musician-name Dermot Byrne
+        |  is one of Ireland’s most outstanding traditional accordion players. For many years a member of Altan, Dermot performed, recorded and toured extensively with the group along with artists like Donal Lunny, Steve Cooney and Stephane Grapelli, bringing the beauty and joy of traditional Irish music to audiences all over the world. In other collaborations he has performed previously with Frankie Gavin, Sharon Shannon, and The Stunning along with many other outstanding Irish and international musicians. For his contribution to Irish music Dermot was chosen as TG4's Traditional Musician of the Year 2013.
+      = image_tag('dermot_profile', class: "musician-image dermot-image");
 
 
-  p The new group's first outing will be at the prestigious Celtic Connections music festival in Glasgow on 21 January 2018. Further announcements of recordings and performance dates will follow early next year."
+    p The new group's first outing will be at the prestigious Celtic Connections music festival in Glasgow on 21 January 2018. Further announcements of recordings and performance dates will follow early next year."
+
+
+#media-section
+  .inner-section
+    h1 Keenan Gavin Byrne
+    iframe width="854" height="480" src="https://www.youtube.com/embed/_sggPrL6Fcs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
+
+    iframe width="854" height="480" src="https://www.youtube.com/embed/JKoZkkcHYDo?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
+
+    iframe width="854" height="480" src="https://www.youtube.com/embed/dKFsQMz0sUc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
+
 
 = react_component('TourDates', dates: TourDate.all)
+
+
+#contact-section
+  .inner-section
+    h1 Contact
+    p For booking inquiries, contact Brian McDaid:
+    p bammcdaid@yahoo.ie
 
 

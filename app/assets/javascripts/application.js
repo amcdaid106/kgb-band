@@ -16,5 +16,6 @@
 //= require react
 //= require react_ujs
 //= require classnames
+//= require date.format
 //= require components
 //= require_tree .

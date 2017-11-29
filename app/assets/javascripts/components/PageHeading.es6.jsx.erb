@@ -30,12 +30,11 @@ class PageHeading extends React.Component {
     return(
       <div id="top-of-page" className="home-page-container">
         <div className="navbar-container">
-          <div className="navbar-logo-link">KGB</div>
           <div className="navbar-links">
             <a href="#" onClick={() => this.smoothScroll("top-of-page")}>HOME</a>
             <a href="#" onClick={() => this.smoothScroll("about-section")}>ABOUT</a>
-            <a href="#" onClick={() => this.smoothScroll("about-section")}>TOUR</a>
-            <a href="#" onClick={() => this.smoothScroll("about-section")}>MEDIA</a>
+            <a href="#" onClick={() => this.smoothScroll("media-section")}>MEDIA</a>
+            <a href="#" onClick={() => this.smoothScroll("tour-dates-section")}>TOUR</a>
             <a href="#" onClick={() => this.smoothScroll("about-section")}>CONTACT</a>
           </div>
           <div

@@ -16,3 +16,17 @@
  */
 
 @import "bootstrap";
+
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  .inner-section {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 60%;
+    h1 {
+      text-align: center;
+    }
+  }
+}

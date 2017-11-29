@@ -1,0 +1,37 @@
+class TourDates extends React.Component {
+  getImage() {
+    return `<%= asset_path('kgb_group_with_logo.jpg') %>`
+  }
+
+  render() {
+    return (
+      <div id="tour-dates-section">
+        <div className="inner-section">
+          <h1>Tour Dates</h1>
+          {this.props.dates.map((tourDate, index) => {
+            return (
+              <div key={index} className="tour-date-container">
+                <img src={this.getImage()} height="100" alt=""/>
+                <div className="tour-date-details">
+                  <div>
+                    {dateFormat(tourDate.date_time, "d mmmm, yyyy")}
+
+                  </div>
+                  <div>
+                    <a target="_blank" href={tourDate.address_url}>{tourDate.city}</a>
+                  </div>
+                  <div>
+                    <a target="_blank" href={tourDate.venue_url}>{tourDate.venue}</a>
+                  </div>
+                  <div>
+                    <a target="_blank" href={tourDate.tickets_url}>TICKETS</a>
+                  </div>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    )
+  }
+}
