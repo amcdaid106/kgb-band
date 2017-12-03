@@ -27,7 +27,7 @@ TourDate.delete_all
 
 TourDate.create(
   date_time: DateTime.new(2018,1,21,19,30,0),
-  city: "Glasgow"
+  city: "Glasgow",
   venue: "City Halls - Celtic Connections Music Festival",
   venue_url: "http://www.glasgowconcerthalls.com/city-halls/Pages/default.aspx",
   address: "Candleriggs, Glasgow, G1 1NQ",
