@@ -5,9 +5,11 @@ class TourDates extends React.Component {
 
   render() {
     return (
-      <div id="tour-dates-section">
+      <div id="tour-dates-section" className="outer-section">
         <div className="inner-section">
-          <h1>Tour Dates</h1>
+          <div className="heading-container">
+            <h1>Tour Dates</h1>
+          </div>
           {this.props.dates.map((tourDate, index) => {
             return (
               <div key={index} className="tour-date-container">

@@ -1,6 +1,6 @@
 .home-page-container {
   // background: image-url('home/img_background_tall.png') no-repeat fixed;
-  background: image-url('kgb_group_v3.png');
+  background: image-url('kgb_group.png');
   // background: image-url('placeholder_home_background.jpg');
   // background: white;
   background-size: cover;
@@ -46,7 +46,7 @@
         padding: 0 20px;
         text-decoration: none;
         &:hover {
-          color: #BABABB;
+          color: #FDC02F;
         }
       }
       @media(max-width: 767px) {
@@ -60,6 +60,11 @@
       display: none;
       font-size: 20px;
       margin-right: 30px;
+      position: absolute;
+      right: 0;
+      &:hover {
+        color: #FDC02F;
+      }
       @media(max-width: 767px) {
         display: block;
       }
@@ -83,7 +88,7 @@
         padding: 30px;
         text-decoration: none;
         &:hover {
-          color: #BABABB;
+          color: #FDC02F;
         }
         .link-inner-container {
           text-align: center;
@@ -101,13 +106,12 @@
       height: 60px;
       margin-right: 10px;
       &:hover {
-        color: #BABABB;
+        color: #FDC02F;
       }
     }
   }
   .large-logo {
-    text-shadow: 10px 10px 8px black;
-
+    text-shadow: 2px 2px 2px #666;
     color: white;
     font-size: 200px;
     font-family: 'Lobster Two', cursive;
@@ -118,29 +122,29 @@
     position: absolute;
     width: 100%;
     top: 20vh;
+    color: #FDC02F;
     .logo-names {
-      position: relative;
-      left: 25%;
-      .keenan {
-        position: absolute;
-        top: -110px;
-        // max-width: 530px;
-        // max-width: 210px;
-      }
-      .gavin {
-        position: absolute;
-        top: 0px;
-        left: 90px;
-      }
-      .byrne {
-        position: absolute;
-        top: 110px;
-        left: 180px;
-      }
+      font-size: 40px;
+      // .keenan {
+      //   position: absolute;
+      //   top: -110px;
+      //   // max-width: 530px;
+      //   // max-width: 210px;
+      // }
+      // .gavin {
+      //   position: absolute;
+      //   top: 0px;
+      //   left: 90px;
+      // }
+      // .byrne {
+      //   position: absolute;
+      //   top: 110px;
+      //   left: 180px;
+      // }
 
     }
 
-    @media(max-width: 600px) {
+    @media(max-width: 800px) {
       font-size: 90px;
       .row-one {
         max-height: 40px;
@@ -178,7 +182,10 @@
     align-items: center;
     margin-bottom: 30px;
     .musician-name {
+      background-color: #FDC02F;
+      // color: #FDC02F;
       font-weight: bold;
+      // text-shadow: 2px 2px 2px black;
     }
     .musician-text {
       margin-right: 50px;
@@ -198,8 +205,14 @@
 }
 
 #media-section, #contact-section {
-  background: #BABABB;
+  // background: #BABABB;
   text-align: center;
+  .inner-section {
+    iframe {
+      margin: 20px 0;
+      max-width: 100%;
+    }
+  }
 }
 
 #tour-dates-section {

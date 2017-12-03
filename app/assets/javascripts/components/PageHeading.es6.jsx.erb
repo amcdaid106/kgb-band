@@ -35,7 +35,7 @@ class PageHeading extends React.Component {
             <a href="#" onClick={() => this.smoothScroll("about-section")}>ABOUT</a>
             <a href="#" onClick={() => this.smoothScroll("media-section")}>MEDIA</a>
             <a href="#" onClick={() => this.smoothScroll("tour-dates-section")}>TOUR</a>
-            <a href="#" onClick={() => this.smoothScroll("about-section")}>CONTACT</a>
+            <a href="#" onClick={() => this.smoothScroll("contact-section")}>CONTACT</a>
           </div>
           <div
             className="navbar-menu-icon"
@@ -64,21 +64,21 @@ class PageHeading extends React.Component {
               </div>
             </a>
             <a className="sidebar-link" href="#"
-              onClick={() => this.smoothScroll("about-section")}
+              onClick={() => this.smoothScroll("tour-dates-section")}
             >
               <div className="link-inner-container">
                 TOUR
               </div>
             </a>
             <a className="sidebar-link" href="#"
-              onClick={() => this.smoothScroll("about-section")}
+              onClick={() => this.smoothScroll("media-section")}
             >
               <div className="link-inner-container">
                 MEDIA
               </div>
             </a>
             <a className="sidebar-link" href="#"
-              onClick={() => this.smoothScroll("about-section")}
+              onClick={() => this.smoothScroll("contact-section")}
             >
               <div className="link-inner-container">
                 CONTACT
@@ -87,12 +87,14 @@ class PageHeading extends React.Component {
           </div>
         </div>
         <div className="large-logo">
-          <div className="logo-names">
-            <div className="keenan">Keenan</div>
-            <div className="gavin">Gavin</div>
-            <div className="byrne">Byrne</div>
-
-          </div>
+            <div>KGB</div>
+            <div className="logo-names">
+              <div>
+                <span>Keenan.</span>
+                <span>Gavin.</span>
+                <span>Byrne.</span>
+              </div>
+            </div>
         </div>
       </div>
     )

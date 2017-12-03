@@ -1,8 +1,9 @@
 = react_component('PageHeading')
 
-#about-section
+#about-section.outer-section
   .inner-section
-    h1.about-heading Three of Ireland's top traditional musicians to form new group
+    .heading-container
+      h1.about-heading About KGB
     p In a move that is sure to energise the Irish traditional music scene three of Ireland's finest instrumentalists have announced that they are to come together to form a new group. Paddy Keenan, Frankie Gavin and Dermot Byrne are to merge their considerable musical talents for a series of performances at home and abroad beginning in January 2018. The new group is to be called KGB.
 
     p The trio are synonymous with Irish music both in their own individual right and as members of some of this country's most famous traditional bands and groups, dating from the early 1970s to the present day. All are mutiple award winners who have made outstanding contributions to traditional music.
@@ -29,10 +30,11 @@
     p The new group's first outing will be at the prestigious Celtic Connections music festival in Glasgow on 21 January 2018. Further announcements of recordings and performance dates will follow early next year."
 
 
-#media-section
+#media-section.outer-section
   .inner-section
-    h1 Keenan Gavin Byrne
-    iframe width="854" height="480" src="https://www.youtube.com/embed/_sggPrL6Fcs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
+    .heading-container
+      h1 Keenan Gavin Byrne
+    iframe width="854" height="480" src="https://www.youtube.com/embed/_sggPrL6Fcs" frameborder="0" gesture="media" allow="encrypted-media?rel=0" allowfullscreen
 
     iframe width="854" height="480" src="https://www.youtube.com/embed/JKoZkkcHYDo?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
 
@@ -42,9 +44,10 @@
 = react_component('TourDates', dates: TourDate.all)
 
 
-#contact-section
+#contact-section.outer-section
   .inner-section
-    h1 Contact
+    .heading-container
+      h1 Contact
     p For booking inquiries, contact Brian McDaid:
     p bammcdaid@yahoo.ie
 
