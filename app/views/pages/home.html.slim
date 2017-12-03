@@ -26,6 +26,8 @@
         |  is one of Ireland’s most outstanding traditional accordion players. For many years a member of Altan, Dermot performed, recorded and toured extensively with the group along with artists like Donal Lunny, Steve Cooney and Stephane Grapelli, bringing the beauty and joy of traditional Irish music to audiences all over the world. In other collaborations he has performed previously with Frankie Gavin, Sharon Shannon, and The Stunning along with many other outstanding Irish and international musicians. For his contribution to Irish music Dermot was chosen as TG4's Traditional Musician of the Year 2013.
       = image_tag('dermot_profile.jpg', class: "musician-image dermot-image");
 
+= react_component('TourDates', dates: TourDate.all)
+
 #media-section.outer-section
   .inner-section
     .heading-container
@@ -35,9 +37,6 @@
     iframe width="854" height="480" src="https://www.youtube.com/embed/JKoZkkcHYDo?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
 
     iframe width="854" height="480" src="https://www.youtube.com/embed/dKFsQMz0sUc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
-
-
-= react_component('TourDates', dates: TourDate.all)
 
 
 #contact-section.outer-section
