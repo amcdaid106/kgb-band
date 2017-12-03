@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20171129223709) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "tour_dates", force: :cascade do |t|
     t.datetime "date_time"
     t.string   "venue"
