@@ -50,28 +50,28 @@ class PageHeading extends React.Component {
           <div className="links">
             <a
               className="sidebar-link" href="#"
-              onClick={() => this.smoothScroll("about-section")}
+              onClick={(e) => this.smoothScroll(e, "about-section")}
             >
               <div className="link-inner-container">
                 ABOUT
               </div>
             </a>
             <a className="sidebar-link" href="#"
-              onClick={() => this.smoothScroll("tour-dates-section")}
+              onClick={(e) => this.smoothScroll(e, "tour-dates-section")}
             >
               <div className="link-inner-container">
                 TOUR
               </div>
             </a>
             <a className="sidebar-link" href="#"
-              onClick={() => this.smoothScroll("media-section")}
+              onClick={(e) => this.smoothScroll(e, "media-section")}
             >
               <div className="link-inner-container">
                 MEDIA
               </div>
             </a>
             <a className="sidebar-link" href="#"
-              onClick={() => this.smoothScroll("contact-section")}
+              onClick={(e) => this.smoothScroll(e, "contact-section")}
             >
               <div className="link-inner-container">
                 CONTACT
