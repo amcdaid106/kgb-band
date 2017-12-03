@@ -19,3 +19,19 @@
 //= require date.format
 //= require components
 //= require_tree .
+
+
+var thresholdPx = 145;
+$(window).scroll(function() {
+  var scrollTop = $(document).scrollTop();
+
+  if (scrollTop > thresholdPx) {
+    $('.navbar-container').css({
+      background: 'rgba(253,192,47,0.7)'
+    })
+  } else if (scrollTop <= thresholdPx) {
+    $('.navbar-container').css({
+      background: 'transparent'
+    })
+  }
+});
