@@ -1,13 +1,6 @@
 class PageHeading extends React.Component {
-  // getLogoImage() {
-  //   return `<%= asset_path('placeholder_navbar_logo.jpg') %>`
-  // }
-
-  // getLargeLogoImage() {
-  //   return `<%= asset_path('placeholder_background_logo.png') %>`
-  // }
-
-  smoothScroll(id) {
+  smoothScroll(e, id) {
+    e.preventDefault();
     $('html, body').animate({
       scrollTop: $(`#${id}`).offset().top
     }, 750);
@@ -31,11 +24,11 @@ class PageHeading extends React.Component {
       <div id="top-of-page" className="home-page-container">
         <div className="navbar-container">
           <div className="navbar-links">
-            <a href="#" onClick={() => this.smoothScroll("top-of-page")}>HOME</a>
-            <a href="#" onClick={() => this.smoothScroll("about-section")}>ABOUT</a>
-            <a href="#" onClick={() => this.smoothScroll("media-section")}>MEDIA</a>
-            <a href="#" onClick={() => this.smoothScroll("tour-dates-section")}>TOUR</a>
-            <a href="#" onClick={() => this.smoothScroll("contact-section")}>CONTACT</a>
+            <a href="#" onClick={(e) => this.smoothScroll(e, "top-of-page")}>HOME</a>
+            <a href="#" onClick={(e) => this.smoothScroll(e, "about-section")}>ABOUT</a>
+            <a href="#" onClick={(e) => this.smoothScroll(e, "media-section")}>MEDIA</a>
+            <a href="#" onClick={(e) => this.smoothScroll(e, "tour-dates-section")}>TOUR</a>
+            <a href="#" onClick={(e) => this.smoothScroll(e, "contact-section")}>CONTACT</a>
           </div>
           <div
             className="navbar-menu-icon"
