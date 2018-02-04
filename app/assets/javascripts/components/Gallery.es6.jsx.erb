@@ -1,0 +1,27 @@
+class Gallery extends React.Component {
+	render() {
+		return (
+			<div id="gallery-section" className="outer-section section">
+			  <div className="inner-section">
+			    <div className="heading-container">
+			      <h1>Gallery</h1>
+			      {this.props.photos.map((fileName) => {
+			      	return (
+			      		<Photo fileName={fileName}/>
+			      	)
+			      })}
+			    </div>
+			  </div>
+			</div>
+		)
+	}
+}
+
+
+class Photo extends React.Component {
+	render() {
+		return (
+			<img className="gallery-photo" src={this.props.fileName} alt=""/>
+		)
+	}
+}

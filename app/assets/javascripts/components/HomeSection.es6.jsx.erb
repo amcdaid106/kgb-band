@@ -24,12 +24,13 @@ class HomeSection extends React.Component {
     return(
       <div id="home-section" className="home-page-container section">
         <div className="navbar-container">
+          <a className="brand-link " href="#" onClick={(e) => this.smoothScroll(e, "home-section")}>KGB</a>
           <div className="navbar-links">
-            <a className="brand-link " href="#" onClick={(e) => this.smoothScroll(e, "home-section")}>KGB</a>
             <a id="home-section-link" className="active" href="#" onClick={(e) => this.smoothScroll(e, "home-section")}>HOME</a>
             <a id="about-section-link" href="#" onClick={(e) => this.smoothScroll(e, "about-section")}>ABOUT</a>
             <a id="tour-dates-section-link" href="#" onClick={(e) => this.smoothScroll(e, "tour-dates-section")}>TOUR</a>
-            <a id="media-section-link" href="#" onClick={(e) => this.smoothScroll(e, "media-section")}>MEDIA</a>
+            <a id="videos-section-link" href="#" onClick={(e) => this.smoothScroll(e, "videos-section")}>VIDEOS</a>
+            <a id="gallery-section-link" href="#" onClick={(e) => this.smoothScroll(e, "gallery-section")}>GALLERY</a>
             <a id="contact-section-link" href="#" onClick={(e) => this.smoothScroll(e, "contact-section")}>CONTACT</a>
           </div>
           <div
@@ -65,10 +66,10 @@ class HomeSection extends React.Component {
               </div>
             </a>
             <a className="sidebar-link" href="#"
-              onClick={(e) => this.smoothScroll(e, "media-section")}
+              onClick={(e) => this.smoothScroll(e, "videos-section")}
             >
               <div className="link-inner-container">
-                MEDIA
+                VIDEOS
               </div>
             </a>
             <a className="sidebar-link" href="#"

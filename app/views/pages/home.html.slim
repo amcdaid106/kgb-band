@@ -28,16 +28,21 @@
 
 = react_component('TourDates', dates: TourDate.all)
 
-#media-section.outer-section.section
+#videos-section.outer-section.section
   .inner-section
     .heading-container
-      h1 Keenan Gavin Byrne
+      h1 Videos
     iframe width="854" height="480" src="https://www.youtube.com/embed/_sggPrL6Fcs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
 
     iframe width="854" height="480" src="https://www.youtube.com/embed/JKoZkkcHYDo?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
 
     iframe width="854" height="480" src="https://www.youtube.com/embed/dKFsQMz0sUc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
 
+= react_component('Gallery', photos: [\
+    asset_url('gallery/dermot_looking_down.jpg'),
+    asset_url('gallery/dermot_looking_right.jpg'),
+    asset_url('gallery/frankie_red.jpg')\
+])
 
 #contact-section.outer-section.section
   .inner-section
