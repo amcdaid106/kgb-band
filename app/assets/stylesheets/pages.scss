@@ -1,5 +1,5 @@
 .home-page-container {
-  background: image-url('kgb_group.png');
+  background: image-url('kgb_glasgow.jpg');
   background-size: cover;
   font-family: 'Josefin Sans', sans-serif;
   min-height: 100vh;
@@ -7,6 +7,7 @@
   background-position: center top;
   height: 100%;
   .navbar-container {
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,21 +18,27 @@
     transition: background 0.6s;
     .navbar-links {
       display: flex;
+      align-items: center;
       justify-content: center;
-      font-size: 15px;
-      font-weight: lighter;
+      font-size: 16px;
+      // font-weight: bold;
       padding-top: 8px;
       width: 100%;
       a {
-        color: black;
+        color: #CCCCCC;
         padding: 0 20px;
         text-decoration: none;
-        &:hover {
-          color: #FDC02F;
+        &:hover, &.active {
+          color: #92371D;
+          font-weight: bold;
         }
       }
       @media(max-width: 767px) {
         display: none;
+      }
+      a.brand-link {
+        color: #92371D;
+        font-size: 30px;
       }
     }
     .navbar-menu-icon {
@@ -89,40 +96,49 @@
       }
     }
   }
-  .large-logo {
-    color: #FDC02F;
-    font-family: 'Lobster Two', cursive;
-    font-size: 22vh;
+  .awards-text {
+    color: #CCCCCC;
+    font-size: 20px;
     font-weight: bold;
-    margin-top: 80px;
     position: absolute;
-    top: 20vh;
+    right: 100px;
+    top: 40%;
     text-align: center;
-    text-shadow: 2px 2px 2px #666;
-    width: 100%;
-    .logo-names {
-      font-size: 5vh;
-    }
-    @media(max-width: 800px) {
-      .row-one {
-        max-height: 40px;
-      }
-      .keenan {
-        position: absolute;
-        top: -110px;
-      }
-      .gavin {
-        position: absolute;
-        top: 0px;
-        left: 90px;
-      }
-      .byrne {
-        position: absolute;
-        top: 110px;
-        left: 180px;
-      }
-    }
   }
+  // .large-logo {
+  //   color: #FDC02F;
+  //   font-family: 'Lobster Two', cursive;
+  //   font-size: 22vh;
+  //   font-weight: bold;
+  //   margin-top: 80px;
+  //   position: absolute;
+  //   top: 20vh;
+  //   text-align: center;
+  //   text-shadow: 2px 2px 2px #666;
+  //   width: 100%;
+  //   .logo-names {
+  //     font-size: 5vh;
+  //   }
+  //   @media(max-width: 800px) {
+  //     .row-one {
+  //       max-height: 40px;
+  //     }
+  //     .keenan {
+  //       position: absolute;
+  //       top: -110px;
+  //     }
+  //     .gavin {
+  //       position: absolute;
+  //       top: 0px;
+  //       left: 90px;
+  //     }
+  //     .byrne {
+  //       position: absolute;
+  //       top: 110px;
+  //       left: 180px;
+  //     }
+  //   }
+  // }
 }
 
 
@@ -137,7 +153,9 @@
     align-items: center;
     margin-bottom: 30px;
     .musician-name {
-      background-color: #FDC02F;
+      // background-color: #92371D;
+      color: #92371D;
+      font-size: 18px;
       font-weight: bold;
     }
     .musician-text {

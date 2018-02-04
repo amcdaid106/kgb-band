@@ -1,8 +1,9 @@
-class PageHeading extends React.Component {
+class HomeSection extends React.Component {
   smoothScroll(e, id) {
     e.preventDefault();
+    const navbarSpace = $('.navbar-container').height();
     $('html, body').animate({
-      scrollTop: $(`#${id}`).offset().top
+      scrollTop: $(`#${id}`).offset().top - navbarSpace
     }, 750);
   }
 
@@ -21,14 +22,15 @@ class PageHeading extends React.Component {
 
   render() {
     return(
-      <div id="top-of-page" className="home-page-container">
+      <div id="home-section" className="home-page-container section">
         <div className="navbar-container">
           <div className="navbar-links">
-            <a href="#" onClick={(e) => this.smoothScroll(e, "top-of-page")}>HOME</a>
-            <a href="#" onClick={(e) => this.smoothScroll(e, "about-section")}>ABOUT</a>
-            <a href="#" onClick={(e) => this.smoothScroll(e, "tour-dates-section")}>TOUR</a>
-            <a href="#" onClick={(e) => this.smoothScroll(e, "media-section")}>MEDIA</a>
-            <a href="#" onClick={(e) => this.smoothScroll(e, "contact-section")}>CONTACT</a>
+            <a className="brand-link " href="#" onClick={(e) => this.smoothScroll(e, "home-section")}>KGB</a>
+            <a id="home-section-link" className="active" href="#" onClick={(e) => this.smoothScroll(e, "home-section")}>HOME</a>
+            <a id="about-section-link" href="#" onClick={(e) => this.smoothScroll(e, "about-section")}>ABOUT</a>
+            <a id="tour-dates-section-link" href="#" onClick={(e) => this.smoothScroll(e, "tour-dates-section")}>TOUR</a>
+            <a id="media-section-link" href="#" onClick={(e) => this.smoothScroll(e, "media-section")}>MEDIA</a>
+            <a id="contact-section-link" href="#" onClick={(e) => this.smoothScroll(e, "contact-section")}>CONTACT</a>
           </div>
           <div
             className="navbar-menu-icon"
@@ -39,8 +41,7 @@ class PageHeading extends React.Component {
         </div>
         <div
           ref={(el) => this.$sidebarEl = $(el)}
-          className="nav-sidebar"
-        >
+          className="nav-sidebar">
           <div
             className="close-sidebar"
             onClick={this.closeSidebar}
@@ -79,15 +80,19 @@ class PageHeading extends React.Component {
             </a>
           </div>
         </div>
-        <div className="large-logo">
-            <div>KGB</div>
-            <div className="logo-names">
-              <div>
-                <span>Keenan.</span>
-                <span>Gavin.</span>
-                <span>Byrne.</span>
-              </div>
-            </div>
+        <div className="awards-text">
+          <p>
+            PADDY KEENAN: 2002 GRADAM CEOIL<br/>
+            MUSICIAN OF THE YEAR
+          </p>
+          <p>
+            DERMOT BYRNE: 2013 GRADAM CEOIL<br/>
+            MUSICIAN OF THE YEAR
+          </p>
+          <p>
+            FRANKIE GAVIN: 2018 GRADAM CEOIL<br/>
+            MUSICIAN OF THE YEAR
+          </p>
         </div>
       </div>
     )
